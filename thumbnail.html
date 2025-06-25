@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thumbnail Image Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .gallery a img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      transition: border-color 0.3s;
+    }
+    .gallery a:hover img {
+      border-color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Image Gallery with Thumbnails</h1>
+
+<div class="gallery">
+  <a href="images/photo1-large.jpg" target="_blank" rel="noopener">
+    <img src="images/photo1-thumb.jpg" alt="Photo 1 Thumbnail" />
+  </a>
+  <a href="images/photo2-large.jpg" target="_blank" rel="noopener">
+    <img src="images/photo2-thumb.jpg" alt="Photo 2 Thumbnail" />
+  </a>
+  <a href="images/photo3-large.jpg" target="_blank" rel="noopener">
+    <img src="images/photo3-thumb.jpg" alt="Photo 3 Thumbnail" />
+  </a>
+  <a href="images/photo4-large.jpg" target="_blank" rel="noopener">
+    <img src="images/photo4-thumb.jpg" alt="Photo 4 Thumbnail" />
+  </a>
+</div>
+
+</body>
+</html>
